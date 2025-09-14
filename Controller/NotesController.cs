@@ -38,7 +38,7 @@ namespace _3EAHealth.Controller
 
 
                 // If something failed and null came back
-                if (note == null || notes.Value == null)
+                if (notes == null || notes.Value == null)
                 {
                     return BadRequest(new { Message = "Note could not be created." }); // status 400 because it was unable to save data
                 }
@@ -181,4 +181,5 @@ namespace _3EAHealth.Controller
        
     }
 }
+
 
