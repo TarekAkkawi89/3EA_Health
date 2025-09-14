@@ -165,8 +165,7 @@ namespace _3EAHealth.Controller
                     return NotFound(new { Message = $"Note with id {id} not found." }); 
                 }
 
-                if (updatedNote.tenantId != tenantId)
-                    return Forbid(); //403 . It should never come here but safety check
+            
 
                 return NoContent();// status 204 success but client does not need any body (JSON)
             }
@@ -182,3 +181,4 @@ namespace _3EAHealth.Controller
        
     }
 }
+
