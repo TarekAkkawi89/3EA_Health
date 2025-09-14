@@ -1,4 +1,4 @@
-﻿using _3EA_Health.Data;
+using _3EA_Health.Data;
 using _3EA_Health.Entities;
 using _3EAHealth.DataAccessLayer.Interface;
 using Microsoft.AspNetCore.Http;
@@ -15,7 +15,7 @@ namespace _3EAHealth.Controller
     [ApiController]
     public class NotesController : ControllerBase
     {
-        const string API_KEY = "3EAHealth";
+        const string API_KEY = "3EAHealth"; //simple authorization check with param in swagger
         private readonly INotesRepository _repo;
 
         public NotesController(INotesRepository repo)
@@ -25,7 +25,7 @@ namespace _3EAHealth.Controller
 
 
         [HttpPost]
-        public async Task<ActionResult<Notes>> PostNotes(Notes note)
+        public async Task<ActionResult<Notes>> PostNotes(Notes note, [FromHeader(Name = "Authorization")] string authorization)
         {
             try
             {
@@ -55,7 +55,8 @@ namespace _3EAHealth.Controller
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteNotes(int id, [FromHeader(Name = "X-Tenant-Id")] int tenantId)
+        public async Task<IActionResult> DeleteNotes(int id, [FromHeader(Name = "X-Tenant-Id")] int tenantId,
+            [FromHeader(Name = "Authorization")] string authorization)
         {
             try
             {
@@ -94,7 +95,8 @@ namespace _3EAHealth.Controller
         }
 
         [HttpGet("{patientid}")]
-        public async Task<ActionResult<Notes>> GetNotes(int patientid, [FromHeader(Name = "X-Tenant-Id")] int tenantId)
+        public async Task<ActionResult<Notes>> GetNotes(int patientid, [FromHeader(Name = "X-Tenant-Id")] int tenantId,
+            [FromHeader(Name = "Authorization")] string authorization)
         {
             try
             {
@@ -132,7 +134,8 @@ namespace _3EAHealth.Controller
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutNotes(int id, Notes notes, [FromHeader(Name = "X-Tenant-Id")] int tenantId)
+        public async Task<IActionResult> PutNotes(int id, Notes notes, [FromHeader(Name = "X-Tenant-Id")] int tenantId,
+            [FromHeader(Name = "Authorization")] string authorization)
         {
             try
             {
