@@ -1,8 +1,0 @@
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.csproj.AssemblyReference.cache
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.AssemblyInfoInputs.cache
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.AssemblyInfo.cs
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.csproj.CoreCompileInputs.cache
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Tarek\Desktop\3EA Health\3EA Health\obj\Debug\net9.0\3EA Health.MvcApplicationPartsAssemblyInfo.cache
