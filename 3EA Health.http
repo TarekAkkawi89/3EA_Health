@@ -1,0 +1,6 @@
+@_3EA_Health_HostAddress = http://localhost:5237
+
+GET {{_3EA_Health_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
